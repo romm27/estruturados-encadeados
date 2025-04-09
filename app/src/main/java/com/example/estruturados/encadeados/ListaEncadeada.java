@@ -32,6 +32,10 @@ public class ListaEncadeada { //Não entendi se podia usar a fila para implement
         return lista.pegarTamanhoRestanteEstrutura();
     }
     
+    public boolean vazia(){
+        return lista == null;
+    }
+    
     public Integer pegar(int index){
         int contador = 0;
         Node atual = lista;

@@ -17,6 +17,10 @@ class FilaEncadeada {
         }
     }
     
+    public boolean vazia(){
+        return lista == null;
+    }
+    
     public Integer remove(){
         if(lista == null){
             return 0;
@@ -29,6 +33,11 @@ class FilaEncadeada {
     }
     
     public void imprime(){
+        if(lista == null){
+            System.out.println("Fila vazia!");
+            return;
+        }
+        
         Node atual = lista;
         
         while(atual != null){

@@ -6,22 +6,28 @@ package com.example.estruturados.encadeados;
 public class App {
 
     public static void main(String[] args) {
-        ListaEncadeada A = new ListaEncadeada();
+        FilaEncadeada A = new FilaEncadeada();
         A.insere(10);
         A.insere(30);
         A.insere(50);
         A.insere(70);
         A.insere(90);
-        A.insere(110);
-        A.insere(120);
-        A.insere(120);
+        A.insere(130);
+        A.insere(150);
+        System.out.println("A:");
+        A.imprime();
         
-        ListaEncadeada B = new ListaEncadeada();
+        FilaEncadeada B = new FilaEncadeada();
         B.insere(20);
         B.insere(40);
+        B.insere(60);
+        B.insere(80);
         B.insere(100);
-        B.insere(133);
+        B.insere(110);
+        System.out.println("B:");
+        B.imprime();
         
+        System.out.println("C:");
         new MergeEncadeado().mergeEncadeado(A, B).imprime();
     }
 }
