@@ -18,6 +18,10 @@ class FilaEncadeada {
     }
     
     public Integer remove(){
+        if(lista == null){
+            return 0;
+        }
+        
         Node atual = lista;
         lista = atual.proximo; //<---- Li em todo lugar que apenas remover qualquer referencia a uma instancia automaticamente marca uma instancia para ser destruida pelo garbage collector, se puder confirmar isso em sala eu agradeço.
         return atual.dado;
