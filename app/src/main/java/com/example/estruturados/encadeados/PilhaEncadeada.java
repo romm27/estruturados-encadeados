@@ -38,11 +38,15 @@ public class PilhaEncadeada {
         else{
             pilha = null;
         }
-        System.out.println("Valor removido:" + atual.dado.toString());
+        System.out.println("Valor removido:" + atual.dado.toString() + " de Pilha!");
         return atual.dado;
     }
     
     public void imprime(){
+        if(pilha == null){
+            System.out.println("Pilha Vazia!");
+        }
+        
         Node atual = pilha;
         
         while(atual != null){
