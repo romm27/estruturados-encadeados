@@ -6,7 +6,7 @@
 ### Tanto a pilha encadeada quanto a fila encadeada possuem métodos `insere()` muito parecidos. A ideia é criar uma nova instância de `Node` e adicionar uma referência a ela como a próxima `Node` na última `Node` atual.  
 
 ## Fila Encadeada (`FilaEncadeada.java`)  
-### Usei a `FilaEncadeada` base do professor como referência e adicionei as funcionalidades de fila. Quando a função `remove()` é chamada, a referência do primeiro `Node` é passada para o próximo `Node` da referência atual, permitindo que o Garbage Collector do Java remova automaticamente essa instância do `Node`.  
+### Usei a Lista Encadeada base do professor como referência e adicionei as funcionalidades de fila. Quando a função `remove()` é chamada, a referência do primeiro `Node` é passada para o próximo `Node` da referência atual, permitindo que o Garbage Collector do Java remova automaticamente essa instância do `Node`.  
 
 ## Pilha Encadeada (`PilhaEncadeada.java`)  
 ### O método `insere()` funciona um pouco diferente da fila. Um `while` percorre todos os `Nodes`, mantendo na memória o `Node` atual e o `Node` anterior. Quando o próximo `Node` do `Node` atual é `null`, significa que alcançamos o fim da pilha. Portanto, a referência do penúltimo `Node` (Node Anterior) deve ser setada para `null`, transformando-o no final da pilha.  
