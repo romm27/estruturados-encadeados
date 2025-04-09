@@ -17,9 +17,7 @@ public class ListaEncadeada { //Não entendi se podia usar a fila para implement
         }
     }
     
-    public void remove(int index){
-        
-    }
+    //public void remove(int index){} <--- Sem implementação de remove para seguir exemplo do professor.
     
     public void imprime(){
         Node atual = lista;
@@ -28,5 +26,19 @@ public class ListaEncadeada { //Não entendi se podia usar a fila para implement
             System.out.println(atual.dado.toString());
             atual = atual.proximo;
         }
+    }
+    
+    public Integer pegar(int index){
+        int count = 0;
+        Node atual = lista;
+        while(atual != null){
+            if(index == count){
+                return atual.dado;
+            }
+            atual = atual.proximo;
+            count++;
+        }
+        System.out.println("Erro: Index fora do tamanho da fila");
+        return null;
     }
 }

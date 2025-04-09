@@ -6,22 +6,13 @@ package com.example.estruturados.encadeados;
 public class App {
 
     public static void main(String[] args) {
-        FilaEncadeada teste = new FilaEncadeada();
+        ListaEncadeada teste = new ListaEncadeada();
         teste.insere(1);
         teste.insere(2);
         teste.insere(3);
         teste.insere(4);
         teste.insere(5);
         teste.insere(6);
-        teste.remove();
-        teste.remove();
-        teste.insere(6);
-        teste.remove();
-        teste.remove();
-        teste.remove();
-        teste.remove();
-        teste.remove();
-        teste.remove();
-        teste.imprime();
+        System.out.println(teste.pegar(99));
     }
 }
