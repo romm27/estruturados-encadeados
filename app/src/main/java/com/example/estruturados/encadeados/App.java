@@ -2,29 +2,57 @@ package com.example.estruturados.encadeados;
 
 public class App {
     public static void main(String[] args) {
-        Fila A = new Fila(10);
-        A.insere(0);
-        A.insere(2);
-        A.insere(4);
-        A.insere(6);
-        A.insere(8);
-        A.insere(9);
+        System.out.println("Teste: Fila Encadeada");
+        FilaEncadeada filaEncadeada = new FilaEncadeada();
+        filaEncadeada.insere(10);
+        filaEncadeada.insere(20);
+        filaEncadeada.insere(30);
+        filaEncadeada.imprime();
+        filaEncadeada.remove();
+        filaEncadeada.imprime();
+
+        System.out.println("Teste: Pilha Encadeada");
+        PilhaEncadeada pilhaEncadeada = new PilhaEncadeada();
+        pilhaEncadeada.insere(5);
+        pilhaEncadeada.insere(15);
+        pilhaEncadeada.insere(25);
+        pilhaEncadeada.imprime();
+        pilhaEncadeada.remove();
+        pilhaEncadeada.imprime();
+
+        System.out.println("Teste: Merge Encadeado");
+        FilaEncadeada A = new FilaEncadeada();
         A.insere(10);
-        System.out.println("A:");
+        A.insere(30);
+        A.insere(50);
+        System.out.println("Lista A");
         A.imprime();
-
-        Fila B = new Fila(10);
-        B.insere(1);
-        B.insere(3);
-        B.insere(5);
-        B.insere(7);
-        B.insere(9);
-        B.insere(11);
-        B.insere(13);
-        System.out.println("B:");
+        FilaEncadeada B = new FilaEncadeada();
+        B.insere(20);
+        B.insere(40);
+        B.insere(60);
+        System.out.println("Lista B");
         B.imprime();
+        MergeEncadeado mergeEncadeado = new MergeEncadeado();
+        System.out.println("Lista C");
+        mergeEncadeado.mergeEncadeado(A, B).imprime();
 
-        System.out.println("C:");
-        new MergeVetor().merge(A, B).imprime();
+        System.out.println("Teste: Merge com Vetor");
+        Fila A2 = new Fila(5);
+        A2.insere(5);
+        A2.insere(15);
+        A2.insere(25);
+        System.out.println("Lista A");
+        A2.imprime();
+        Fila B2 = new Fila(5);
+        B2.insere(10);
+        B2.insere(20);
+        B2.insere(30);
+        System.out.println("Lista B");
+        B2.imprime();
+        MergeVetor mergeVetor = new MergeVetor();
+        Fila filaMerge = mergeVetor.merge(A2, B2);
+        System.out.println("Lista C");
+        filaMerge.imprime();
     }
 }

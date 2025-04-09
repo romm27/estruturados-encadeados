@@ -33,7 +33,7 @@ public class PilhaEncadeada {
         }
         
         if(ultimaNode != null){
-            ultimaNode.proximo = null; //Aviso do netbeans "Dereferencing possible null pointer" pesquisei mas não entendi direito o que significa.
+            ultimaNode.proximo = null;
         }
         else{
             pilha = null;
