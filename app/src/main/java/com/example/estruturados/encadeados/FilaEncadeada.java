@@ -22,13 +22,17 @@ class FilaEncadeada {
     }
     
     public Integer remove(){
+        return remove("");
+    }
+    
+    public Integer remove(String nome){
         if(lista == null){
             return 0;
         }
         
         Node atual = lista;
         lista = atual.proximo; //<---- Li em todo lugar que apenas remover qualquer referencia a uma instancia automaticamente marca uma instancia para ser destruida pelo garbage collector, se puder confirmar isso em sala eu agradeço.
-        System.out.println("Valor removido:" + atual.dado.toString() + " de Fila!");
+        System.out.println("Valor removido:" + atual.dado.toString() + " de Fila " + nome + "!");
         return atual.dado;
     }
     
