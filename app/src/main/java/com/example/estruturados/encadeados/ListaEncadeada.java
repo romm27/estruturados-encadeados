@@ -29,14 +29,14 @@ public class ListaEncadeada { //Não entendi se podia usar a fila para implement
     }
     
     public Integer pegar(int index){
-        int count = 0;
+        int contador = 0;
         Node atual = lista;
         while(atual != null){
-            if(index == count){
+            if(index == contador){
                 return atual.dado;
             }
             atual = atual.proximo;
-            count++;
+            contador++;
         }
         System.out.println("Erro: Index fora do tamanho da fila");
         return null;

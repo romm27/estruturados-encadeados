@@ -18,4 +18,15 @@ public class Node {
         
         return atual;
     }
+    
+    public int pegarTamanhoRestanteEstrutura(){
+        int contador = 0;
+        Node atual = this;
+        
+        while(atual.proximo != null){
+            atual = atual.proximo;
+            contador++;
+        }
+        return contador;
+    }
 }
