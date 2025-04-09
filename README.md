@@ -1,5 +1,5 @@
 # Manual  
-### Rodando `App.java` você recebera um prompt perguntando se quer rodar testes automatizados ou acessar as operações CRUD do sistema, seguindo os passos que aparecem na tela, será possível inserir, remover ou exibir valores de uma pilha, duas listas(A e B), assim como realizar o merge destas duas listas.
+### Rodando `App.java` você recebera um prompt perguntando se quer rodar testes automatizados ou acessar as operações CRUD do sistema, seguindo os passos que aparecem na tela, será possível inserir, remover ou exibir valores de uma pilha ou de duas listas(A e B), assim como realizar o merge destas duas listas.
 
 ## Valores Testados:
 Fila Encadeada: 10, 20, 30
