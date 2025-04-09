@@ -1,5 +1,7 @@
 # Manual  
-### Rodando `App.java` você recebera um prompt perguntando se quer rodar testes automatizados ou acessar as operações CRUD do sistema, seguindo os passos que aparecem na tela, será possível inserir, remover ou exibir valores de uma pilha ou de duas listas(A e B), assim como realizar o merge destas duas listas.
+### Rodando `App.java` você recebera um prompt perguntando se quer rodar testes automatizados ou acessar as operações CRUD do sistema, tanto com vetores, como com estruturas encadeadas. No CRUD encadeado seguindo os passos que aparecem na tela, será possível inserir, remover ou exibir valores de uma pilha ou de duas listas(A e B), assim como realizar o merge destas duas listas. Enquanto no merge estático será possível definir duas filas estáticas de qualquer tamanho e realizar a operação de merge.
+
+p.s: Lembrando que o programa assume que as listas estão ordenadas.
 
 ## Valores Testados:
 Fila Encadeada: 10, 20, 30
