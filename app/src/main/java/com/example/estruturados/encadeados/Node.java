@@ -8,4 +8,14 @@ public class Node {
         this.dado = dado;
         proximo = null;
     }
+    
+    public Node pegarFimDaNode(){
+        Node atual = this;
+        
+        while(atual.proximo != null){
+            atual = atual.proximo;
+        }
+        
+        return atual;
+    }
 }
