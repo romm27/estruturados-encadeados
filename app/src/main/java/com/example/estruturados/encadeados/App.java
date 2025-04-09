@@ -12,13 +12,15 @@ public class App {
         A.insere(50);
         A.insere(70);
         A.insere(90);
+        A.insere(110);
+        A.insere(120);
+        A.insere(120);
         
         ListaEncadeada B = new ListaEncadeada();
         B.insere(20);
         B.insere(40);
-        B.insere(60);
-        B.insere(80);
         B.insere(100);
+        B.insere(133);
         
         new MergeEncadeado().mergeEncadeado(A, B).imprime();
     }
