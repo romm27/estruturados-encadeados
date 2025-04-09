@@ -1,6 +1,6 @@
 package com.example.estruturados.encadeados;
 
-public class ListaEncadeada { //Não entendi se podia usar a fila para implementar o merge, por isso fez essa classe de fila separada.
+public class ListaEncadeada { //Não entendi se podia usar a fila para implementar o merge, por isso fez essa classe de lista separada.
     public Node lista;
     
     public ListaEncadeada(){
