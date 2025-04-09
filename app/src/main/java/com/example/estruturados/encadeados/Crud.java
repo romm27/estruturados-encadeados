@@ -53,7 +53,9 @@ public class Crud {
             
             if(alvo == 'm'){
                 System.out.println("Fazendo o merge entre A e B assumindo que ambas estão ordenadas...");
-                new MergeEncadeado().mergeEncadeado(filaEncadeadaA, filaEncadeadaB).imprime();
+                FilaEncadeada filaEncadeadaC = new MergeEncadeado().mergeEncadeado(filaEncadeadaA,filaEncadeadaB);
+                System.out.println("Fila Encadeada C:");
+                filaEncadeadaC.imprime();
                 System.out.println("Digite enter para continuar...");
                 scanner.nextLine();
                 continue;
