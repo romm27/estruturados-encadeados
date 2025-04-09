@@ -1,6 +1,18 @@
 # Manual  
 ### Rodando `App.java` você recebera um prompt perguntando se quer rodar testes automatizados ou acessar as operações CRUD do sistema, seguind os passos que aparecem na tela, será possível inserir, remover ou exibir valores de uma pilha, duas listas(A e B), assim como realizar o merge destas duas listas.
 
+## Valores Testados:
+Fila Encadeada: 10, 20, 30
+Pilha Encadeada: 5, 15, 25
+
+Merge Encadeado:
+A: 10, 30, 50
+B: 20, 40, 60
+
+Merge Vetor:
+A: 5, 15, 25
+B: 10, 20, 30
+
 # Soluções  
 ## Geral  
 ### Tanto a pilha encadeada quanto a fila encadeada possuem métodos `insere()` muito parecidos. A ideia é criar uma nova instância de `Node` e adicionar uma referência a ela como a próxima `Node` na última `Node` atual.  
