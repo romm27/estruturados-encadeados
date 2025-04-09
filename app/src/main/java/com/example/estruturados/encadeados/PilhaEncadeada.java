@@ -38,6 +38,7 @@ public class PilhaEncadeada {
         else{
             pilha = null;
         }
+        System.out.println("Valor removido:" + atual.dado.toString());
         return atual.dado;
     }
     
