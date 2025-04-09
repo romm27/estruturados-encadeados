@@ -1,5 +1,5 @@
 # Manual  
-### Apenas rode `App.java`, e todos os testes serão executados e registrados no console automaticamente!  
+### Rodando `App.java` você recebera um prompt perguntando se quer rodar testes automatizados ou acessar as operações CRUD do sistema, seguind os passos que aparecem na tela, será possível inserir, remover ou exibir valores de uma pilha, duas listas(A e B), assim como realizar o merge destas duas listas.
 
 # Soluções  
 ## Geral  
