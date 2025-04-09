@@ -5,7 +5,7 @@ public class Fila {
     private int ultimo = -1;
     private int tamanho = 0;
     private int[] dados;
-    private final int capacidade;
+    public int capacidade;
 
     public Fila(int capacidade) {
         this.capacidade = capacidade;
