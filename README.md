@@ -1,5 +1,17 @@
 # Manual  
-### Apenas rode `App.java`, e todos os testes serão executados e registrados no console automaticamente!  
+### Rodando `App.java` você recebera um prompt perguntando se quer rodar testes automatizados ou acessar as operações CRUD do sistema, seguindo os passos que aparecem na tela, será possível inserir, remover ou exibir valores de uma pilha ou de duas listas(A e B), assim como realizar o merge destas duas listas.
+
+## Valores Testados:
+Fila Encadeada: 10, 20, 30
+Pilha Encadeada: 5, 15, 25
+
+Merge Encadeado:
+A: 10, 30, 50
+B: 20, 40, 60
+
+Merge Vetor:
+A: 5, 15, 25
+B: 10, 20, 30
 
 # Soluções  
 ## Geral  
